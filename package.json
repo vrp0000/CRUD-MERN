@@ -1,0 +1,15 @@
+{
+  "name": "scaletech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p client server",
+    "client": "npm --prefix ./bookstore start",
+    "server": "npm --prefix ./server start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
