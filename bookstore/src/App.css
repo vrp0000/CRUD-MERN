@@ -1,0 +1,74 @@
+.root {
+  min-height: 500px;
+  min-width: 500px;
+  padding: 5%;
+  margin: 50px;
+}
+
+.auth-card {
+  padding: 50px;
+  text-align: justify;
+  align-items: center;
+  margin: 50px auto;
+  margin-top: 50px;
+  background-color: rgb(43, 104, 139);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hdr2 {
+  flex-direction: inherit;
+  width: 197px;
+  align-items: center;
+  justify-content: initial;
+  display: flex;
+}
+.sbmtbtns {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.select {
+  height: 10px;
+  align-content: center;
+}
+
+.txtinp {
+  height: 50%;
+}
+
+.bttn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5%;
+}
+
+.lgntxt {
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.lbl {
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.scrller {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}

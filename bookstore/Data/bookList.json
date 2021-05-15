@@ -1,0 +1,122 @@
+{
+    "books": [
+        {
+            "title": "",
+            "author": "",
+            "price": "",
+            "rating": "",
+            "image": "",
+            "category": "",
+            "description": ""
+        }
+    ]
+}
+
+const courses = [
+    {
+      id: 1,
+      title: "Securing React Apps with Auth0",
+      description: "react-auth0-authentication-security",
+      author: vinay,
+      price : 100,
+      rating: 1,
+      category: "JavaScript",
+    },
+    {
+      id: 2,
+      title: "React: The Big Picture",
+      description: "react-big-picture",
+      author: vinay,
+      price : 500,
+      rating: 2,
+      category: "JavaScript",
+    },
+    {
+      id: 3,
+      title: "Creating Reusable React Components",
+      description: "react-creating-reusable-components",
+      author: vinay,
+      rating: 3,
+      price : 550,
+      category: "JavaScript",
+    },
+    {
+      id: 4,
+      title: "Building a JavaScript Development Environment",
+      description: "javascript-development-environment",
+      author: vinay,
+      price : 505,
+      rating: 1.5,
+      category: "JavaScript",
+    },
+    {
+      id: 5,
+      title: "Building Applications with React and Redux",
+      description: "react-redux-react-router-es6",
+      author: vinay,
+      rating: 0.5,
+      price : 60,
+      category: "JavaScript",
+    },
+    {
+      id: 6,
+      title: "Building Applications in React and Flux",
+      description: "react-flux-building-applications",
+      author: vinay,
+      price : 2000,
+      rating: 4.8,
+      category: "JavaScript",
+    },
+    {
+      id: 7,
+      title: "Clean Code: Writing Code for Humans",
+      description: "writing-clean-code-humans",
+      author: vinay,
+      price : 601,
+      rating: 1.0,
+      category: "Software Practices",
+    },
+    {
+      id: 8,
+      title: "Architecting Applications for the Real World",
+      description: "architecting-applications-dotnet",
+      author: vinay,
+      price : 566,
+      rating: 1,
+      category: "Software Architecture",
+    },
+    {
+      id: 9,
+      title: "Becoming an Outlier: Reprogramming the Developer Mind",
+      description: "career-reboot-for-developer-mind",
+      author: vinay,
+      price : 789,
+      rating: 2,
+      category: "Career",
+    },
+    {
+      id: 10,
+      title: "Web Component Fundamentals",
+      description: "web-components-shadow-dom",
+      author: vinay,
+      price : 060,
+      rating: 5,
+      category: "HTML5",
+    },
+];
+  
+  
+  const newCourse = {
+    id: null,
+    title: "",
+    description: "",
+    category: "",
+};
+  
+  // Using CommonJS style export so we can consume via Node (without using Babel-node)
+  module.exports = {
+    newCourse,
+    courses,
+    authors,
+};
+  
