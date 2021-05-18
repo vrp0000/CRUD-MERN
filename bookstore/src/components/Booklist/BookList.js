@@ -41,8 +41,6 @@ const BookList = (props) => {
       });
   };
 
-  const 
-
   return (
     <div>
       {console.log("Sending data = ", data)}

@@ -10,6 +10,8 @@ const HomePage = (props) => {
   const [Page, setPage] = useState(0);
   const [Current, setCurrentDataSet] = useState(0);
   const [pageContent, setContent] = useState([]);
+  const [grp, setGroup] = useState("None");
+  const [sortvalue, setSort] = useState("A");
 
   useEffect(() => {
     console.log("In first use effect");
@@ -63,11 +65,21 @@ const HomePage = (props) => {
     );
   };
 
+  const grpby = (event) => {
+    console.log("Option changed to ", event.target.value);
+    setGroup(event.target.value);
+  };
+
+  const changeSort = (event) => {
+    console.log(event.target);
+    setSort(event.target.value === "A" ? "D" : "A");
+  };
+
   return (
     <>
       {console.log("Rendering")}
       {console.log("Book data sent = ", pageContent)}
-      <Header />
+      <Header changeSort={changeSort} grpby={grpby} sort={sortvalue} />
       <BookData books={pageContent} deleteRecord={props.ondelete} />
       <PageScroller change={changePage} />
     </>

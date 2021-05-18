@@ -14,6 +14,12 @@
   background-color: rgb(43, 104, 139);
 }
 
+.addbook {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: fit-content;
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -23,9 +29,9 @@
 
 .hdr2 {
   flex-direction: inherit;
-  width: 197px;
+  width: auto;
   align-items: center;
-  justify-content: initial;
+  justify-content: space-evenly;
   display: flex;
 }
 .sbmtbtns {
