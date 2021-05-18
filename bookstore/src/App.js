@@ -1,23 +1,21 @@
 import React, { useEffect } from "react";
 import Login from "./components/Login/Login";
-import BookList from "./components/Booklist/BookList"
-import { Route, Switch } from "react-router-dom"
+import BookList from "./components/Booklist/BookList";
+import { Route, Switch } from "react-router-dom";
 import BookDelete from "./components/Booklist/BookDelete";
-import form from "./components/BookForm/form";
+
 import ManageBooks from "./components/ManageBooks/Managebooks";
-import { BrowserRouter, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-
-const Routing = () =>
-{
+const Routing = () => {
   const history = useHistory();
-  useEffect(() =>
-  {
-    const token = localStorage.getItem("token")
+  useEffect(() => {
+    const token = localStorage.getItem("token");
     if (!token) {
-      history.push("/")
+      history.push("/");
     }
-  }, [])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <Switch>
       <Route exact path="/" component={Login} />
@@ -26,16 +24,11 @@ const Routing = () =>
       <Route exact path="/book-add" component={ManageBooks} />
       <Route exact path="/book-update/:name" component={ManageBooks} />
     </Switch>
-  )
+  );
+};
 
-}
+const App = () => {
+  return <Routing />;
+};
 
-
-const App = () =>
-{
-  return (
-    <Routing />
-  )
-}
-
-export default App
+export default App;
