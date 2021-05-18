@@ -1,8 +1,8 @@
 Installation steps.
 
-1.  Go to Scaletech Folder and run "npm i"
-2.  GO to Scaletech/bookstore and run "npm i"
-3.  Go to Scaletech/server and run "npm i"
+1.  Run "npm i" from root folderr
+2.  GO to /bookstore and run "npm i"
+3.  Go to /server and run "npm i"
 
 Running the application
 -> Go to Scaletech folder and run "npm start"
