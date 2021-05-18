@@ -1,7 +1,7 @@
 Installation steps.
 
 1.  Run "npm i" from root folderr
-2.  GO to /bookstore and run "npm i"
+2.  Go to /bookstore and run "npm i"
 3.  Go to /server and run "npm i"
 
 Running the application
